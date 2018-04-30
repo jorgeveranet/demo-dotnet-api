@@ -3,7 +3,7 @@ Simple dotnet api that returns Lender's Reviews!
 
 ```
 git clone https://github.com/jorgeveranet/demo-dotnet-api.git
-cd src/Reviews.Api/
+cd demo-dotnet-api/src/Reviews.Api/
 dotnet run
 ```
 

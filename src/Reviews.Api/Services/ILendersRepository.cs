@@ -5,6 +5,7 @@ namespace Reviews.Api.Services
 {
     public interface ILendersRepository
     {
-        IEnumerable<Lender> GeLenders();
+        IEnumerable<Lender> GetAll();
+        int Save(Lender lender);
     }
 }

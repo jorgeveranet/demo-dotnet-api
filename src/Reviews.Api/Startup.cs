@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Reviews.Api.Services;
 
 namespace Reviews.Api
 {
@@ -24,6 +25,9 @@ namespace Reviews.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            // Please use Scoped, using singleton for now to simulate in memory storage ;)
+            services.AddSingleton<ILendersRepository, LendersRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
